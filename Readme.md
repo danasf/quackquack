@@ -6,7 +6,7 @@ What
 
 A "Hello, World"  using push notifications to control sound and lights on an internet-connected toy animal. 
 
-Visit [Internet of Ducks](http://polkapolka.net/quack/) to send a quack to an internet connected duck via push notification.
+Visit [Internet of Ducks](https://danasf.github.io/quackquack/www/index.html) to send a quack to an internet connected duck via push notification.
 
 What you need 
 ----
@@ -33,7 +33,6 @@ Setup
 		pub_key: 'pub key', 
 		sub_key: 'sub key',
 	};
-
 ```
 
 4. Copy the `/www/` folder to your web host of choice, or run on localhost with `python -m SimpleHTTPServer 5000`
@@ -45,7 +44,6 @@ git clone https://github.com/danasf/quackquack
 sudo apt-get install mplayer
 sudo pip install pubnub
 sudo python ~/quackquack/pyclient/client.py
-
 ```
 
 6. Have fun!

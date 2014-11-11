@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>quack. quack.</title>
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+</head>
+<body>
+ <div class="container">
+  <h1>Internet of Ducks</h1>
+  <audio id="audio" src="./sounds/quack1.mp3"></audio>
+  <div id="messages">
+  </div>
+  <p>You've quacked <span id="quack_count">0</span> times</p>
+  <p class="grey">Hover over the duck to send a quack, via push notification.</p>
+  <p class="grey"><a href="/">Um ... what is going on here?</a></p>
+ </div>
+</body>
+<script src="https://cdn.pubnub.com/pubnub.min.js"></script>
+<script src="./app.js"></script>
+</html>

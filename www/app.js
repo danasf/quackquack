@@ -9,8 +9,8 @@
 
 	var settings = { 
 		channel: 'ducks',
-		pub_key: 'key', 
-		sub_key: 'key',
+		pub_key: 'pub-c-b80d5346-1b26-4061-b782-6d8a7e48812b', 
+		sub_key: 'sub-c-8e4a88cc-6919-11e4-814d-02ee2ddab7fe',
 	};
 
 	/* helpers */

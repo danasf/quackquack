@@ -1,12 +1,11 @@
 Internet Connected Toy Animals
 =================
 
-What
-----
+A "Hello, World"  using push notifications to control sound and lights on an internet-connected toy animal. By popular demand it also implements 'quack backs' and will inform you when a peer has sent a message. 
 
-A "Hello, World"  using push notifications to control sound and lights on an internet-connected toy animal. 
+Visit [Internet of Ducks](https://danasf.github.io/quackquack/www/index.html) to make an an internet connected duck quack via push notification. 
 
-Visit [Internet of Ducks](https://danasf.github.io/quackquack/www/index.html) to send a quack to an internet connected duck via push notification.
+By popular request I added "quack backs" to receive messages from peers. I also reserve the right to unplug the speaker late at night :p
 
 What you need 
 ----

@@ -1,13 +1,12 @@
 Internet Connected Toy Animals
 =================
 
-A "Hello, World"  using push notifications to control sound and lights on an internet-connected toy animal. By popular demand it also implements 'quack backs' and will inform you when a peer has sent a message. 
+A "Hello, World"  using push notifications to control sound and lights on an internet-connected toy animal. By popular demand it also implements 'quack backs' and will inform you when a peer has sent a message. I also reserve the right to unplug the speaker late at night :p
 
 Visit [Internet of Ducks](https://danasf.github.io/quackquack/www/index.html) to make an an internet connected duck quack via push notification. 
 
-By popular request I added "quack backs" to receive messages from peers. I also reserve the right to unplug the speaker late at night :p
 
-What you need 
+What you need to make your own
 ----
 
 1. An internet connected Raspberry Pi with lights and a speaker.
@@ -20,12 +19,11 @@ What you need
 Setup
 ----
 
-1. Register for a [PubNub](https://pubnub.com) account. They provide a free development Sandbox, as well as a generous [platform evangelism program](http://www.pubnub.com/free-evangelism-program/) for students, makers, start-ups etc. 
+* Register for a [PubNub](https://pubnub.com) account. They provide a free development Sandbox, as well as a generous [platform evangelism program](http://www.pubnub.com/free-evangelism-program/) for students, makers, start-ups etc. 
 
-2. Purchase a [Raspberry Pi](https://www.adafruit.com/search?q=raspberry+pi), LEDs, wifi dongle and speaker.
+* Purchase a [Raspberry Pi](https://www.adafruit.com/search?q=raspberry+pi), LEDs, wifi dongle and speaker.
 
-3. Configure your application settings in `app.js`
-
+* Configure your application settings in `app.js` 
 ```
 	var settings = { 
 		channel: 'ducks',
@@ -34,9 +32,9 @@ Setup
 	};
 ```
 
-4. Copy the `/www/` folder to your web host of choice, or run on localhost with `python -m SimpleHTTPServer 5000`
+* Copy the `/www/` folder to your web host of choice, or run on localhost with `python -m SimpleHTTPServer 5000`
 
-5. Clone the repo to your Raspberry Pi and install dependencies, configure and then run `client.py`
+* Clone the repo to your Raspberry Pi and install dependencies, configure and then run `client.py`
 
 ```
 git clone https://github.com/danasf/quackquack
@@ -45,7 +43,7 @@ sudo pip install pubnub
 sudo python ~/quackquack/pyclient/client.py
 ```
 
-6. Have fun!
+* Have fun!
 
 
 Possible Future Variations

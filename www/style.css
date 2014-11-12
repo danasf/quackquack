@@ -1,4 +1,4 @@
-@font-face { font-family: 'Comic Neue'; src: local('Comic Neue'),url("./font/ComicNeue-Light.eot") format('eot'); font-weight: 100; }
+@font-face { font-family: 'Comic Neue'; src: url("./font/ComicNeue-Light.eot") format('eot'); font-weight: 100; }
 body { font-family:'Comic Neue',sans-serif; font-size: 1.1em;  }
 h1 { font-size: 2.6em; }
 .container { margin:10px auto; width:500px; text-align: center; }
@@ -7,3 +7,5 @@ a:hover { text-decoration: none; }
 #messages { width:100%; min-height:400px; background:url("./img/duck1.png") no-repeat center center; }
 #messages:hover { background:url("./img/duck2.png") no-repeat center center; }
 #quack_count { font-size: 2em; font-weight: 700; }
+#quackback { display: none; color:#ff0000; }
+.redduck { background:url("./img/duck3.png") no-repeat center center !important; }

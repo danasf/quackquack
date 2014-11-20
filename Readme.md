@@ -5,7 +5,6 @@ A "Hello, World"  using push notifications to control sound and lights on an int
 
 Visit [Internet of Ducks](https://danasf.github.io/quackquack/www/index.html) to make an an internet connected duck quack via push notification. 
 
-
 What you need to make your own
 ----
 
@@ -40,9 +39,9 @@ Setup
 
 ```
 git clone https://github.com/danasf/quackquack
-sudo apt-get install mplayer python-pip
-sudo pip install pubnub paho-mqtt
-sudo python ~/quackquack/pyclient/pn_client.py
+sudo apt-get install mplayer
+sudo pip install pubnub
+sudo python ~/quackquack/pyclient/client.py
 ```
 
 * Have fun!

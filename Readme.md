@@ -5,13 +5,12 @@ A "Hello, World"  using push notifications to control sound and lights on an int
 
 Visit [Internet of Ducks](https://danasf.github.io/quackquack/www/index.html) to make an an internet connected duck quack via push notification. 
 
-
 What you need to make your own
 ----
 
-1. An internet connected Raspberry Pi with lights and a speaker.
+1. An internet connected embedded device (Raspberry Pi, etc) with lights and a speaker.
 
-2. [PubNub](https://pubnub.com)'s easy-to-use push API and SDKs.
+2. [PubNub](https://pubnub.com)'s easy-to-use push API and SDKs. Or a [MQTT broker](http://www.mosquitto.org/).
 
 3. A homemade or re-purposed stuffed animal (instructions forthcoming).
 
@@ -21,9 +20,11 @@ Setup
 
 * Register for a [PubNub](https://pubnub.com) account. They provide a free development Sandbox, as well as a generous [platform evangelism program](http://www.pubnub.com/free-evangelism-program/) for students, makers, start-ups etc. 
 
+* Or, alternatively, setup a MQTT broker. For testing and experimentation you can use a [public one](http://test.mosquitto.org/).
+
 * Purchase a [Raspberry Pi](https://www.adafruit.com/search?q=raspberry+pi), LEDs, wifi dongle and speaker.
 
-* Configure your application settings in `app.js` 
+* Configure your application settings in `js/app.js`, these will vary slightly depending upon whether you use PubNub or MQTT.
 ```
 	var settings = { 
 		channel: 'ducks',
@@ -49,15 +50,17 @@ sudo python ~/quackquack/pyclient/client.py
 Possible Future Variations
 ----
 
+* Optimizing the physical duck. 
 * Battery-operated, Bluetooth LE or Zigbee connected Arduino animals, routed by a central, Internet connected node (star topology). 
-* Rolling my own protocol or XMPP service to handle push.
 
 Media Credits
 ----
 * [Quack](https://www.freesound.org/people/crazyduckman/sounds/185546/) CC-BY CrazyDuckMan
 * [Rubber Duck](https://openclipart.org/detail/8881/rubber-duck-by-gerald_g-8881) via OpenClipart
 * [Comic Neue](http://comicneue.com/) Font
+* [PubNub](https://pubnub.com/)
+* [MOWS](https://github.com/mcollina/mows) - MQTT over Web Socket
 
 License
 ----
-MIT
+MIT 2014

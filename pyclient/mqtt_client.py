@@ -8,6 +8,7 @@ import paho.mqtt.client as mqtt
 host = "test.mosquitto.org"
 sub_channel = "ducks/"
 led_pin = 16
+gpio.setmode(gpio.BCM);
 gpio.setup(led_pin,gpio.OUT)
 gpio.output(led_pin,False)
  

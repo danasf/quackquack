@@ -8,7 +8,7 @@ from Pubnub import Pubnub
 sub_key = "key"
 sub_channel = "ducks"
 led_pin = 16
- 
+gpio.setmode(gpio.BCM);
 gpio.setup(led_pin,gpio.OUT)
 gpio.output(led_pin,False)
 
